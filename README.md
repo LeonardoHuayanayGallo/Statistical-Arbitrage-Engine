@@ -125,9 +125,3 @@ python3 main.py --tickers XOM CVX COP --pair XOM CVX
 ## Technologies
 
 `Python` `Statsmodels` `NumPy` `Pandas` `yfinance` `Matplotlib` `Seaborn`
-
----
-
-## Disclaimer
-
-For educational and research purposes only. Not financial advice.
