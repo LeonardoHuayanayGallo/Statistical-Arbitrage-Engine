@@ -4,6 +4,11 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Data](https://img.shields.io/badge/Data-yfinance%20free-brightgreen)
 
+
+Hi there 👋
+Pairs trading is one of the cleanest examples of statistical arbitrage in practice. This project tests a universe of assets for cointegration, builds a Z-score-driven mean-reversion strategy on the strongest pair, and backtests it with real transaction costs — not a frictionless toy model.
+
+
 ## Overview
 
 An end-to-end algorithmic pairs trading engine based on statistical
