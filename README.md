@@ -19,7 +19,7 @@ The engine:
 5. Backtests the strategy over 5+ years with realistic transaction
    costs and slippage
 
-No API keys required — all data pulled free via `yfinance`.
+All data pulled free via `yfinance`.
 
 ---
 
@@ -38,33 +38,6 @@ Signal:
   Z > +2.0 → SHORT spread (sell A, buy B)
   Z < −2.0 → LONG spread  (buy A, sell B)
   |Z| < 0.5 → EXIT position
-```
-
----
-
-## Setup
-
-```bash
-git clone https://github.com/your-username/statistical-arbitrage-engine
-cd statistical-arbitrage-engine
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-```
-
----
-
-## Usage
-
-```bash
-# Default: Energy sector pairs (XOM, CVX, COP, BP, SLB)
-python3 main.py
-
-# Custom universe
-python3 main.py --tickers JPM GS MS BAC --start 2018-01-01
-
-# Force a specific pair
-python3 main.py --tickers XOM CVX COP --pair XOM CVX
 ```
 
 ---
