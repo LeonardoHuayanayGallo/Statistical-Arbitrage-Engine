@@ -6,6 +6,7 @@
 
 
 Hi there 👋
+
 Pairs trading is one of the cleanest examples of statistical arbitrage in practice. This project tests a universe of assets for cointegration, builds a Z-score-driven mean-reversion strategy on the strongest pair, and backtests it with real transaction costs — not a frictionless toy model.
 
 
