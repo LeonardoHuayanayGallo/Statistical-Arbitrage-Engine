@@ -42,25 +42,6 @@ Signal:
 
 ---
 
-## Architecture
-
-```
-yfinance → Price Data
-               ↓
-   Cointegration Testing (ADF + Engle-Granger)
-   All pairwise combinations tested
-               ↓
-   Best pair selected by p-value
-               ↓
-   Spread → Z-score → Signals
-               ↓
-   Backtest (5 years, transaction costs + slippage)
-               ↓
-   5 Charts + 2 CSV files
-```
-
----
-
 ## Setup
 
 ```bash
@@ -90,15 +71,15 @@ python3 main.py --tickers XOM CVX COP --pair XOM CVX
 
 ## Output
 
-| File | Content |
-|---|---|
-| `01_price_series.png` | Normalized prices of the selected pair |
-| `02_spread_zscore.png` | Spread and Z-score with signal thresholds |
-| `03_trading_signals.png` | Long/short entry and exit points on price |
-| `04_portfolio_performance.png` | Portfolio value vs buy-and-hold + drawdown |
-| `05_cointegration_heatmap.png` | P-value heatmap across all pairs tested |
-| `cointegration_results.csv` | Full cointegration test results |
-| `backtest_results.csv` | Daily P&L, signals, portfolio value |
+![Image Alt](https://github.com/LeonardoHuayanayGallo/Statistical-Arbitrage-Engine/blob/59b280467ed3fbb4c56a7f0ae3665b4d8e1552b5/output/01_price_series.png)
+
+![Image Alt](https://github.com/LeonardoHuayanayGallo/Statistical-Arbitrage-Engine/blob/59b280467ed3fbb4c56a7f0ae3665b4d8e1552b5/output/02_spread_zscore.png)
+
+![Image Alt](https://github.com/LeonardoHuayanayGallo/Statistical-Arbitrage-Engine/blob/59b280467ed3fbb4c56a7f0ae3665b4d8e1552b5/output/03_trading_signals.png)
+
+![Image Alt](https://github.com/LeonardoHuayanayGallo/Statistical-Arbitrage-Engine/blob/59b280467ed3fbb4c56a7f0ae3665b4d8e1552b5/output/04_portfolio_performance.png)
+
+![Image Alt](https://github.com/LeonardoHuayanayGallo/Statistical-Arbitrage-Engine/blob/59b280467ed3fbb4c56a7f0ae3665b4d8e1552b5/output/05_cointegration_heatmap.png)
 
 ---
 
